@@ -1,0 +1,100 @@
+/* azzeramento */
+*{
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+body{
+  font-size: 20px;
+}
+nav{
+  width: 90%;
+  margin: 0 auto;
+  height: 100px;
+  margin-top: 30px;
+}
+#logo > img{
+  height: 30px;
+  margin-top: 5px;
+}
+#flex-start li , #flex-end li{
+  display: inline-block;
+  margin: 0 10px;
+  line-height: 0px;
+  vertical-align: middle;
+}
+ul li{
+  list-style: none;
+}
+.lightgrey{
+  color: lightgrey;
+}
+
+.flex-start{
+  display: flex;
+  justify-content: flex-start;
+
+}
+#flex-end{
+  display: flex;
+  justify-content: flex-end;
+  margin-top: -16px;
+}
+
+#flex-end li a{
+  text-decoration: none;
+  padding: 10px 25px;
+  border: 1px solid black;
+  border-radius: 15px;
+}
+#sign-in{
+  background-color: lightgrey;
+  color: black;
+}
+#app{
+  background-color: black;
+  color: white;
+}
+.feature{
+  margin-top: 100px;
+  width: 700px;
+  height: 300px;
+  display: none;
+}
+
+.feature:hover{
+  display: block;
+  cursor: pointer;
+}
+
+
+.plans{
+  display: none;
+}
+.about{
+  display: none;
+}
+.help{
+    display: none;
+}
+
+/*--- Float ---*/
+[class*="col-"]{
+  float: left;
+}
+/*--- CLEARFIX ---*/
+
+.container:after{
+  content: '';
+  display: table;
+  clear: both;
+}
+.col-3 > ul li{
+  margin: 30px 20px;
+  /* color: #EBEBEB; */
+}
+/* .col-3{
+  width: 25%;
+  margin: 0 30px;
+  /* width: calc(100% /12 *3);
+}*/
