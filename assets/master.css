@@ -62,7 +62,7 @@ ul li{
   display: none;
 }
 
-.feature:hover{
+#flex-end li .feature:hover{
   display: block;
   cursor: pointer;
 }
