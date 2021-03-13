@@ -4,78 +4,157 @@
   padding: 0px;
   box-sizing: border-box;
 }
+
 body{
   font-size: 20px;
+  font-family:'Roboto';
 }
+
 nav{
   width: 90%;
   margin: 0 auto;
-  height: 100px;
+  height: 50px;
   margin-top: 30px;
 }
+
 #logo > img{
   height: 30px;
   margin-top: 5px;
 }
-#flex-start li , #flex-end li{
+
+#flex-start > li , #flex-end > li{
   display: inline-block;
   margin: 0 10px;
   line-height: 0px;
   vertical-align: middle;
 }
+
 ul li{
   list-style: none;
 }
+
 .lightgrey{
-  color: lightgrey;
+  color: #7F8081;
+}
+
+#black{
+  color: black;
 }
 
 .flex-start{
   display: flex;
   justify-content: flex-start;
-
 }
+
 #flex-end{
   display: flex;
   justify-content: flex-end;
   margin-top: -16px;
+  position: relative;
 }
 
-#flex-end li a{
-  text-decoration: none;
-  padding: 10px 25px;
+#flex-end .dropdown ul li a{
+  color: #7F8081;
+}
+
+.bottone{
+  padding: 8px 12px;
   border: 1px solid black;
   border-radius: 15px;
 }
+
+a{
+  text-decoration: none;
+  color: #7F8081;
+}
+
 #sign-in{
-  background-color: lightgrey;
+  background-color: #F3F4F5;
   color: black;
 }
+
 #app{
   background-color: black;
   color: white;
 }
+
 .feature{
-  margin-top: 100px;
+  position: absolute;
+  top: 23px;
+  left: -180px;
   width: 700px;
-  height: 300px;
+  height: 254px;
+
+  font-size: 15px;
+  border-radius: 10px;
+  box-shadow: 0px 6px 16px #CED5DB;
+}
+
+.feature .col-3 > ul li > span{
+  font-size: 0.5rem;
+  position: relative;
+  top: -14px;
+  left: -20px;
+  color: rgb(6, 102, 235);
+}
+
+.none{
   display: none;
 }
 
-#flex-end li .feature:hover{
-  display: block;
-  cursor: pointer;
+.position-relative{
+  position: relative;
 }
 
+#flex-end > .position-relative > a:after{
+  content:"";
+  height: 25px;
+  width: 100%;
+  position: absolute;
+  top: 0px;
+  left: 0;
+}
+
+.plans ul li{
+ line-height: 20px;
+}
 
 .plans{
-  display: none;
+  position: absolute;
+  top: 23px;
+  font-size: 15px;
+
+  padding: 10px 15px;
+  right: -64px;
+  border-radius: 10px;
+  box-shadow: 0px 6px 16px #CED5DB;
 }
+
 .about{
-  display: none;
+  position: absolute;
+  top: 23px;
+  right: -77px;
+  font-size: 14px;
+  line-height: 30px;
+  box-shadow: 0px 6px 16px #CED5DB;
+  padding: 10px 22px;
+  border-radius: 10px;
 }
+
+ #max-content{
+  width: max-content;
+}
+
 .help{
-    display: none;
+  position: absolute;
+  top: 23px;
+  right: -80px;
+  font-size: 15px;
+  line-height: 20px;
+  box-shadow: 0px 6px 16px #CED5DB;
+  padding: 10px 22px;
+  border-radius: 10px;
+
 }
 
 /*--- Float ---*/
@@ -89,12 +168,17 @@ ul li{
   display: table;
   clear: both;
 }
+
 .col-3 > ul li{
-  margin: 30px 20px;
-  /* color: #EBEBEB; */
+  margin: 30px 25px;
 }
+
 /* .col-3{
   width: 25%;
   margin: 0 30px;
   /* width: calc(100% /12 *3);
 }*/
+.active{
+  display: block;
+  cursor: pointer;
+}

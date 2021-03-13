@@ -12,84 +12,87 @@
         <div class="flex-star">
           <ul id="flex-start">
             <li id="logo"><img src="logo.png" alt="logo-revolut"></li>
-            <li>Personal</li>
-            <li class="lightgrey">Business</li>
+            <li><a href="#">Personal</a></li>
+            <li class="lightgrey"><a id="black" href="#">Business</a></li>
           </ul>
 
           <ul id="flex-end">
-           <li class="lightgrey">Feature <div class="feature">
+           <li class="lightgrey position-relative"><a class="lightgrey" href="#">Feature</a> <div class="feature  none dropdown">
             <div class="col-3">
-            <ul>
-              <li id="account"><i class="fas fa-university"></i>ACCOUNT</li>
-              <li>Budget &  Analytics</li>
-              <li>Cards</li>
-              <li>Junior account</li>
-              <li>Pockets</li>
-            </ul>
-            </div>
-            <div class="col-3">
-            <ul>
-              <li id="wealth"><i class="fas fa-chart-line"></i>WEALTH</li>
-              <li>Crypto</li>
-              <li>Commodities</li>
-              <li>Vaults</li>
-              <li>Savings Valuts</li>
-            </ul>
+              <ul>
+                <li class="principale" id="account"><i class="fas fa-university"></i>ACCOUNT</li>
+                <li><a href="#">Budget &  Analytics</a></li>
+                <li><a href="#">Cards</a></li>
+                <li><a href="#">Junior account</a></li>
+                <li><a href="#">Pockets</a></li>
+              </ul>
             </div>
             <div class="col-3">
               <ul>
-                <li id="payments"><i class="fas fa-exchange-alt"></i>PAYMENTS</li>
-                <li>Money trasfers</li>
-                <li>Group bills</li>
-                <li>Subscriptions</li>
+                <li class="principale" id="wealth"><i class="fas fa-chart-line"></i>WEALTH</li>
+                <li><a href="#">Crypto</a></li>
+                <li><a href="#">Commodities</a></li>
+                <li><a href="#">Vaults</a></li>
+                <li>Savings Vaults <span>COMING SOON</span></li>
+              </ul>
+            </div>
+            <div class="col-3">
+              <ul>
+                <li class="principale" id="payments"><i class="fas fa-exchange-alt"></i>PAYMENTS</li>
+                <li><a href="#">Money trasfers</a></li>
+                <li><a href="#">Group bills</a></li>
+                <li><a href="#">Subscriptions</a></li>
               </ul>
             </div>
             <div class="col-3">
               <ul>
                 <li id="extra"><i class="fas fa-star"></i>EXTRAS</li>
-                <li>Donation</li>
-                <li>Overseas insurance</li>
-                <li>Device insurance</li>
-                <li>Safety</li>
-                <li>Rewards</li>
+                <li><a href="#">Donation</a></li>
+                <li><a href="#">Overseas insurance</a></li>
+                <li><a href="#">Device insurance</a></li>
+                <li><a href="#">Safety</a></li>
+                <li>Rewards<span>COMING SOON</span></li>
               </ul>
             </div>
-
-          </div></li>
-           <li class="lightgrey">Plans <div class="plans">
+          </div>
+        </li>
+           <li class="lightgrey position-relative"><a class="lightgrey " href="#">Plans</a><div class="plans none dropdown">
              <ul>
-               <li>Standard</li>
-               <li>Plus</li>
-               <li>Premium</li>
-               <li>Metal</li>
-               <li>Compare plans</li>
+               <li><a href="#">Standard</a></li>
+               <li><a href="#">Plus</a></li>
+               <li><a href="#">Premium</a></li>
+               <li><a href="#">Metal</a></li>
+               <li id="max-content"><a href="#">Compare plans</a></li>
              </ul>
-           </div></li>
-          <li class="lightgrey">About us <div class="about">
+           </div>
+          </li>
+           <li class="lightgrey position-relative"><a class="lightgrey " href="#">About us</a><div class="about none dropdown">
             <ul>
-              <li>About us</li>
-              <li>Blog</li>
-              <li>Leadership</li>
-              <li>Newsroom</li>
-              <li>Affiliates</li>
-              <li>Influencer</li>
-              <li>Careers</li>
-              <li>Culture</li>
-              <li>Diversity & Inclusion</li>
-              <li>Contact</li>
+              <li><a href="#">About us</a></li>
+              <li><a href="#">Blog</a></li>
+              <li><a href="#">Leadership</a></li>
+              <li><a href="#">Newsroom</a></li>
+              <li><a href="#">Affiliates</a></li>
+              <li><a href="#">Influencer</a></li>
+              <li><a href="#">Careers</a></li>
+              <li><a href="#">Culture</a></li>
+              <li id="max-content"><a href="#">Diversity & Inclusion</a></li>
+              <li><a href="#">Contact</a></li>
             </ul>
-          </div></li>
-          <li class="lightgrey">Help<div class="help">
+          </div>
+         </li>
+          <li class="lightgrey position-relative"><a class="lightgrey " href="#">Help</a><div class="help none dropdown">
             <ul>
-              <li>Help centre</li>
-              <li>Comunity</li>
-              <li>Security</li>
-              <li>System Status</li>
-              <li>Developer APIs</li>
+              <li id="max-content"><a href="#">Help centre</a></li>
+              <li><a href="#">Comunity</a></li>
+              <li><a href="#">Security</a></li>
+              <li id="max-content"><a href="#">System Status</a></li>
+              <li id="max-content"><a href="#">Developer APIs</a></li>
             </ul>
-          </div></li>
-          <li><a id="sign-in" href="#">Sign in</a></li>
-           <li><a id="app" href="#">Get the App</a></li>
+          </div>
+         </li>
+          <li><a class="bottone" id="sign-in" href="#">Sign in</a></li>
+           <li><a class="bottone" id="app" href="#">Get the App</a></li>
           </ul>
 
        </div>
@@ -104,9 +107,9 @@
 
 
 
-
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" charset="utf-8"></script>
+    <script src="./assets/main.js" charset="utf-8"></script>
   </body>
 
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" charset="utf-8"></script>
-  <script src="./assets/main.js" charset="utf-8"></script>
+
 </html>
